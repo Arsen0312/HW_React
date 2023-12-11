@@ -6,7 +6,6 @@ const PropsJsx = ({children}) => {
 // Создайте новый React-компонент и используйте JSX для создания элементов интерфейс Используйте как минимум 3 различных тега JSX и вложенности. Затем отобразите этот компонент в основном приложении. Покажите JS данные где нибудь в JSX, к примеру числа или строку которую сохраните в переменную
 
 const arr = [1,2,3,4,5]
-
     return (
         <div>
             <h1>{"Hello React".split("").reverse().join("").toLocaleLowerCase()}</h1>
@@ -23,17 +22,15 @@ export default PropsJsx
 // Задание:
 // Создайте родительский компонент и два дочерних компонента. Передайте свойства из родительского компонента в каждый из дочерних компонентов. Используйте эти свойства для отображения информации в каждом дочернем компоненте. Информация может быть любой, главое чтобы она передавалась пропсом (свойством)
 
-const ChildComponents = (props) => {
-    const {text} = props
+const ChildComponents = ({text}) => {
     return (
         <div>
-            child element {text}
+            child element1 {text}
         </div>
     )
 }
 
-const ChildComponents2 = (props) => {
-    const {text} = props
+const ChildComponents2 = ({text}) => {
     return (
         <div>
             child element2 {text}

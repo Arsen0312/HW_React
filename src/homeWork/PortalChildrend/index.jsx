@@ -3,8 +3,9 @@ import { createPortal } from 'react-dom';
 
 const Portal = (props) => {
   const { container = document.body } = props;
-  //* Порталы будут полезны в тех случиях когда мы хотим сделать модальные окна, всплываюшие
+    //* Порталы будут полезны в тех случиях когда мы хотим сделать модальные окна, всплываюшие
   //* окна, ну еще для рекламы может быт
+
   return createPortal(
     <div>{props.children}</div>,
     container

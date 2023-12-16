@@ -6,12 +6,14 @@ import Portal from './homeWork/PortalChildrend'
 import Todo from './homeWork/TodoReact'
 import Counter from './homeWork/USESTATE/index.jsx'
 import Memo from './homeWork/MEMO/index.jsx'
+import Ref from './homeWork/REF/index.jsx'
 
 function App() {
 
   return (
     <div>
-      <Memo/>
+      <Ref/>
+      {/* <Memo/> */}
       {/* <Counter/> */}
       {/* <Todo/> */}
       {/* <EventComp/> */}

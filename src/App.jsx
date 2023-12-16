@@ -5,12 +5,16 @@ import Button from './homeWork/Button'
 import Portal from './homeWork/PortalChildrend'
 import Todo from './homeWork/TodoReact'
 import Counter from './homeWork/USESTATE/index.jsx'
+import Memo from './homeWork/MEMO/index.jsx'
+import Ref from './homeWork/REF/index.jsx'
 
 function App() {
 
   return (
     <div>
-      <Counter/>
+      <Ref/>
+      {/* <Memo/> */}
+      {/* <Counter/> */}
       {/* <Todo/> */}
       {/* <EventComp/> */}
       {/* <Button onClick={sendbutton}>Send</Button>

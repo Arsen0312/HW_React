@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Route, Routes, BrowserRouter, Link} from 'react-router-dom';
 import PropsJsx from './homeWork/PropsJsx'
 import EventComp from './homeWork/Eents Component'
 import Button from './homeWork/Button'
@@ -7,12 +8,28 @@ import Todo from './homeWork/TodoReact'
 import Counter from './homeWork/USESTATE/index.jsx'
 import Memo from './homeWork/MEMO/index.jsx'
 import Ref from './homeWork/REF/index.jsx'
+import About from './components/About.js'
+import Home from './components/Home.js';
+import Contact from './components/Contact.js';
+import NotFound from './components/404.js';
 
 function App() {
-
-  return (
+  return (  
     <div>
-      <Ref/>
+       <BrowserRouter>
+       <ul>
+        <li><Link to={"/About"}>О нас</Link></li>
+        <li><Link to={"/Home"}>Главная</Link></li>
+        <li><Link to={"/Contact"}>Контакты</Link></li>
+       </ul>
+        <Routes>
+          <Route path='/About' element={<About />} />
+          <Route path='/Home' element={<Home />} />
+          <Route path='/Contact' element={<Contact />} />
+          <Route path="*" element={<NotFound/>} />
+        </Routes>
+      </BrowserRouter>
+      {/* <Ref/> */}
       {/* <Memo/> */}
       {/* <Counter/> */}
       {/* <Todo/> */}

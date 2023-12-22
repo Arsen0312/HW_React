@@ -19,12 +19,12 @@ function App() {
        <BrowserRouter>
        <ul>
         <li><Link to={"/About"}>О нас</Link></li>
-        <li><Link to={"/Home"}>Главная</Link></li>
+        <li><Link to={"/"}>Главная</Link></li>
         <li><Link to={"/Contact"}>Контакты</Link></li>
        </ul>
         <Routes>
           <Route path='/About' element={<About />} />
-          <Route path='/Home' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/Contact' element={<Contact />} />
           <Route path="*" element={<NotFound/>} />
         </Routes>
